@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Punjab Police Crime Control Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+<h1>Punjab Police Crime Control Dashboard</h1>
+<p>AI Powered Investigation System</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Add Criminal Case</h2>
+<input id="criminalName" placeholder="Criminal Name">
+<input id="crimeType" placeholder="Crime Type">
+<input id="officerName" placeholder="Officer Name">
+<textarea id="description" placeholder="Crime Description"></textarea>
+<button onclick="addCase()">Add Case</button>
+</div>
+
+<div class="stats">
+<div class="stat">
+<h3>Total Cases</h3>
+<h1 id="totalCases">0</h1>
+</div>
+
+<div class="stat">
+<h3>Open Cases</h3>
+<h1 id="openCases">0</h1>
+</div>
+</div>
+
+<div class="card">
+<h2>Crime Analytics</h2>
+<canvas id="crimeChart"></canvas>
+</div>
+
+<div class="card">
+<h2>Case Records</h2>
+<div id="records"></div>
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
